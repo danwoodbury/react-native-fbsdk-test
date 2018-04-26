@@ -5,6 +5,10 @@
  */
 import React, { Component } from 'react';
 import { Platform, StyleSheet, Text, View } from 'react-native';
+import { Sentry } from 'react-native-sentry';
+
+Sentry.config('https://acc9c593ba0641049365fdfc758349cc:38bc28c5940b4d2c828e990ce9f4b4f7@sentry.io/299160').install();
+
 
 
 const FBSDK = require('react-native-fbsdk');
@@ -46,7 +50,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    backgroundColor: 'red',
   },
   welcome: {
     fontSize: 20,
